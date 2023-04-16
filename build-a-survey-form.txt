@@ -1,0 +1,141 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey form</title>
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="form">
+    <h1 id="title">Contact with Happy Leather</h1>
+    <p id="description">If you have any question, please contact with us.</p>
+    
+    <form method="post" action="https://contact-form.happyleather.com" id="survey-form">
+    
+    <fieldset>
+      <label for="name" id="name-label">*Name<input id="name" type="text" required placeholder="Enter your name" class="field"></label>
+      <label for="email" id="email-label">*Email<input id="email" type="email" required placeholder="Enter your email" class="field"></label>
+      <label for="number" id="number-label">Phone number<input id="number" type="number" placeholder="Enter your phone number" min="9" max="9" class="field"></label>
+    </fieldset>
+
+    <fieldset>
+      What are you contacting about?
+      <select id="dropdown" name="dropdown">
+        <option value="">(select one)</option>
+        <option value="product">Products</option>
+        <option value="company's enviromental responsibility">Company's enviromental responsibility</option>
+        <option value="shipment">Shipment of my shopping</option>
+        <option value="technical problem">Technical problem</option>
+        <option value="other">Other</option>
+      </select>
+    </fieldset>
+    
+    <fieldset>Are you our customer?
+      <label for="yes-customer"><input type="radio" name="customer" id="yes-customer" class="inline"
+      value="yes">Yes</label>
+      <label for="no-customer"><input type="radio" name="customer" id="no-customer" class="inline" value="no">No</label>
+    </fieldset>
+
+    <fieldset>What would you like see in our offer?
+      <label for="wallet"><input type="checkbox" id="wallets" name="offer" value="wallet" class="inline">Wallets</label>
+      <label for="backpack"><input type="checkbox" id="backpack" name="offer" value="backpack" class="inline">Backpacks</label>
+      <label for="belt"><input type="checkbox" id="belt" name="offer" value="belts" class="inline">Belts</label>
+      <label for="color"><input type="checkbox" id="color" name="offer" value="color" class="inline">Stay lake it is but add more colors</label>
+    </fieldset>
+   
+    <fieldset>
+      <label for="comment">Add a comment
+        <textarea id="comment" name="comment" rows="3" cols="40"></textarea>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <input type="submit" id="submit">
+    </fieldset>
+
+  </div>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  width: 100%;
+  background: url(https://cdn.shopify.com/s/files/1/0017/0396/8870/products/Screenshot_2019-09-17_at_15.06.24_2048x2048.png?v=1568729345); 
+  padding-top: 10px;
+  }
+
+p:first-of-type {
+  margin-top: -10px;
+}
+
+.form {
+  background-color: #FFAA33;
+  color: #954535;
+  margin: 40px 20px;
+  font-family: Trebuchet MS;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1, p {
+  text-align: center;
+}
+
+fieldset {
+  font-size: 16px;
+  border: none;
+  padding: 15px;
+}
+
+fieldset:last-of-type {
+  border-top: 2px solid #954535;
+  padding:10px;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.inline {
+  vertical-align: middle;
+  margin: 0 0.5em 0 0;
+  width: unset;
+  
+}
+
+.field {
+  width: 100%;
+  high-min: 30px;
+  padding: 2px;
+  margin: 3px;
+}
+
+.field,
+select,
+textarea,
+input[type="submit"] {
+  background-color: #F7E2BD;
+  color: #954535 
+}
+
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 80%;
+  min-height: 1.2em;
+  display: block;
+
+input[type="submit"] {
+display: inline-block;
+margin: 0 auto;
+}
+
+** end of undefined **
+
