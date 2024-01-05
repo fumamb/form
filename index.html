@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Survey form</title>
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="form">
+    <h1 id="title">Contact with Happy Leather</h1>
+    <p id="description">If you have any question, please contact with us.</p>
+    
+    <form method="post" action="https://contact-form.happyleather.com" id="survey-form">
+    
+    <fieldset>
+      <label for="name" id="name-label">*Name<input id="name" type="text" required placeholder="Enter your name" class="field"></label>
+      <label for="email" id="email-label">*Email<input id="email" type="email" required placeholder="Enter your email" class="field"></label>
+      <label for="number" id="number-label">Phone number<input id="number" type="number" placeholder="Enter your phone number" min="9" max="9" class="field"></label>
+    </fieldset>
+
+    <fieldset>
+      What are you contacting about?
+      <select id="dropdown" name="dropdown">
+        <option value="">(select one)</option>
+        <option value="product">Products</option>
+        <option value="company's enviromental responsibility">Company's enviromental responsibility</option>
+        <option value="shipment">Shipment of my shopping</option>
+        <option value="technical problem">Technical problem</option>
+        <option value="other">Other</option>
+      </select>
+    </fieldset>
+    
+    <fieldset>Are you our customer?
+      <label for="yes-customer"><input type="radio" name="customer" id="yes-customer" class="inline"
+      value="yes">Yes</label>
+      <label for="no-customer"><input type="radio" name="customer" id="no-customer" class="inline" value="no">No</label>
+    </fieldset>
+
+    <fieldset>What would you like see in our offer?
+      <label for="wallet"><input type="checkbox" id="wallets" name="offer" value="wallet" class="inline">Wallets</label>
+      <label for="backpack"><input type="checkbox" id="backpack" name="offer" value="backpack" class="inline">Backpacks</label>
+      <label for="belt"><input type="checkbox" id="belt" name="offer" value="belts" class="inline">Belts</label>
+      <label for="color"><input type="checkbox" id="color" name="offer" value="color" class="inline">Stay lake it is but add more colors</label>
+    </fieldset>
+   
+    <fieldset>
+      <label for="comment">Add a comment
+        <textarea id="comment" name="comment" rows="3" cols="40"></textarea>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <input type="submit" id="submit">
+    </fieldset>
+
+  </div>
+  </body>
+</html>

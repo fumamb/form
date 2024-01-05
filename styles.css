@@ -1,0 +1,73 @@
+body {
+  width: 100%;
+  background: url(https://cdn.shopify.com/s/files/1/0017/0396/8870/products/Screenshot_2019-09-17_at_15.06.24_2048x2048.png?v=1568729345); 
+  padding-top: 10px;
+  }
+
+p:first-of-type {
+  margin-top: -10px;
+}
+
+.form {
+  background-color: #FFAA33;
+  color: #954535;
+  margin: 40px 20px;
+  font-family: Trebuchet MS;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1, p {
+  text-align: center;
+}
+
+fieldset {
+  font-size: 16px;
+  border: none;
+  padding: 15px;
+}
+
+fieldset:last-of-type {
+  border-top: 2px solid #954535;
+  padding:10px;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.inline {
+  vertical-align: middle;
+  margin: 0 0.5em 0 0;
+  width: unset;
+  
+}
+
+.field {
+  width: 100%;
+  high-min: 30px;
+  padding: 2px;
+  margin: 3px;
+}
+
+.field,
+select,
+textarea,
+input[type="submit"] {
+  background-color: #F7E2BD;
+  color: #954535 
+}
+
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 80%;
+  min-height: 1.2em;
+  display: block;
+
+input[type="submit"] {
+display: inline-block;
+margin: 0 auto;
+}
